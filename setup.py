@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="pyarango-async",
-    version="0.0.1",
+    version="0.0.3",
     author="MJR",
     author_email="rafiei_mohamad@ymail.com",
     description="A simple arango driver for python async codes",
@@ -13,6 +13,10 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     url="https://github.com/JRafiei/pyarango-async",
     packages=setuptools.find_packages(),
+    install_requires=[
+        'aiohttp',
+        'async_timeout',
+      ],
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
